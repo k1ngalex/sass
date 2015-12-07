@@ -1,0 +1,22 @@
+/* Scss Document */
+
+@mixin small($width) {
+    
+    @media all and (min-width:701px) and (max-width:$width){
+        @content;   
+    }
+}
+
+@mixin med($width) {
+    
+    @media all and (min-width:901px) and (max-width:$width){
+        @content;
+    }
+}
+
+@mixin large($width) {
+    
+    @media all and (min-width:$width){
+        @content;
+    }
+}
